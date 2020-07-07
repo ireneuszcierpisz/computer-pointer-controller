@@ -2,6 +2,7 @@
 
 This application is build to run multiple models in the **OpenVino toolkit** on the same machine to **control a computer pointer using eye gaze**.
 
+
 ## Project Set Up and Installation
 
 Folder `src` contains seven files. Four files with model class and its methods. Also `mouse_controller.py`, `input_feeder.py` and main file `main.py`.
@@ -9,11 +10,15 @@ Folder `src` contains seven files. Four files with model class and its methods. 
 There are four OpenVino models in the `models` folder:
 
    [Face Detection (FP32-INT1)](https://docs.openvinotoolkit.org/latest/_models_intel_face_detection_adas_binary_0001_description_face_detection_adas_binary_0001.html)
+   
    [Head Pose Estimation (FP32)](https://docs.openvinotoolkit.org/latest/_models_intel_head_pose_estimation_adas_0001_description_head_pose_estimation_adas_0001.html)
+   
    [Facial Landmarks Detection (FP32)](https://docs.openvinotoolkit.org/latest/_models_intel_landmarks_regression_retail_0009_description_landmarks_regression_retail_0009.html)
+   
    [Gaze Estimation (FP32)](https://docs.openvinotoolkit.org/latest/_models_intel_gaze_estimation_adas_0002_description_gaze_estimation_adas_0002.html)
 
 To build the project I used the **InferenceEngine API from Intel's OpenVino toolkit**.
+
 
 ## Demo
 
@@ -23,11 +28,24 @@ Command to run inference on four models:   `python main.py`
 
 The default arguments: --modelF, --modelG, --modelH, --modelL, --input_type "video", --input_file "bin/demo.mp4", --mouse_speed, --mouse_precision, --device "CPU"
 
-Please find the **result samples** for several different head positions taken from demo.mp4: [pose_1]() [pose_2]() [pose_3]() [pose_4]() [pose_5]()
+Please find the **result samples** for several different head positions taken from demo.mp4: 
+
+   [pose_1](https://github.com/ireneuszcierpisz/computer-pointer-controller/blob/master/bin/output_image0.jpg) 
+   
+   [pose_2](https://github.com/ireneuszcierpisz/computer-pointer-controller/blob/master/bin/output_image1.jpg)  
+   
+   [pose_3](https://github.com/ireneuszcierpisz/computer-pointer-controller/blob/master/bin/output_image2.jpg) 
+   
+   [pose_4](https://github.com/ireneuszcierpisz/computer-pointer-controller/blob/master/bin/output_image3.jpg)  
+   
+   [pose_5](https://github.com/ireneuszcierpisz/computer-pointer-controller/blob/master/bin/output_image6.jpg)
+
 
 ## Documentation
 
-- usage: main.py [-h]   [--modelF MODELF]
+- usage: main.py [-h]   
+
+                        [--modelF MODELF]
                         [--modelG MODELG]
                         [--modelH MODELH]
                         [--modelL MODELL]
@@ -36,20 +54,22 @@ Please find the **result samples** for several different head positions taken fr
                         [--input_file INPUT_FILE]
                         [--mouse_speed MOUSE_SPEED]
                         [--mouse_precision MOUSE_PRECISION]
+                        
 - optional arguments:
-  -h, --help           show this help message and exit
-  --modelF MODELF      The location of the model XML file
-  --modelG MODELG
-  --modelH MODELH
-  --modelL MODELL
-  --device DEVICE
-  --input_type INPUT_TYPE
-                       'video', 'image' or 'cam'
-  --input_file INPUT_FILE
-                       The location of the video or image file.
-                       'None' for input type: 'cam'
-  --mouse_speed MOUSE_SPEED
-  --mouse_precision MOUSE_PRECISION
+
+                 -h, --help           show this help message and exit
+                 --modelF MODELF      The location of the model XML file
+                 --modelG MODELG
+                 --modelH MODELH
+                 --modelL MODELL
+                 --device DEVICE
+                 --input_type INPUT_TYPE
+                                      'video', 'image' or 'cam'
+                 --input_file INPUT_FILE
+                                      The location of the video or image file.
+                                      'None' for input type: 'cam'
+                 --mouse_speed MOUSE_SPEED
+                 --mouse_precision MOUSE_PRECISION
 
 
 ## Benchmarks
