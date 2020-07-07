@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
-from model_face import Model_Face
-from model_gaze import Model_Gaze
-from model_headpose import Model_HeadPose
-from model_landmarks import Model_Landmarks
+from face_detection import Model_Face
+from gaze_estimation import Model_Gaze
+from head_pose_estimation import Model_HeadPose
+from facial_landmarks_detection import Model_Landmarks
 from mouse_controller import MouseController
 from input_feeder import InputFeeder
 import argparse
