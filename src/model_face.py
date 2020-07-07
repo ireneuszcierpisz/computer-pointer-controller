@@ -86,7 +86,8 @@ class Model_Face:
                 ymin = int(box[4] * height)
                 xmax = int(box[5] * width)
                 ymax = int(box[6] * height)
-
+                # if multiple people in the same input frame
+                # choose the one detected with bigest confidence
                 if confidence > conf:
                     conf = confidence
                     bb_coordinates = (xmin,ymin,xmax,ymax)
