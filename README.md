@@ -8,21 +8,22 @@ Folder `src` contains seven files. Four files with model class and its methods. 
 
 There are four OpenVino models in the `models` folder:
 
-    - [Face Detection (FP32-INT1)](https://docs.openvinotoolkit.org/latest/_models_intel_face_detection_adas_binary_0001_description_face_detection_adas_binary_0001.html)
-    - [Head Pose Estimation (FP32)](https://docs.openvinotoolkit.org/latest/_models_intel_head_pose_estimation_adas_0001_description_head_pose_estimation_adas_0001.html)
-    - [Facial Landmarks Detection (FP32)](https://docs.openvinotoolkit.org/latest/_models_intel_landmarks_regression_retail_0009_description_landmarks_regression_retail_0009.html)
-    - [Gaze Estimation (FP32)](https://docs.openvinotoolkit.org/latest/_models_intel_gaze_estimation_adas_0002_description_gaze_estimation_adas_0002.html)
+   [Face Detection (FP32-INT1)](https://docs.openvinotoolkit.org/latest/_models_intel_face_detection_adas_binary_0001_description_face_detection_adas_binary_0001.html)
+   [Head Pose Estimation (FP32)](https://docs.openvinotoolkit.org/latest/_models_intel_head_pose_estimation_adas_0001_description_head_pose_estimation_adas_0001.html)
+   [Facial Landmarks Detection (FP32)](https://docs.openvinotoolkit.org/latest/_models_intel_landmarks_regression_retail_0009_description_landmarks_regression_retail_0009.html)
+   [Gaze Estimation (FP32)](https://docs.openvinotoolkit.org/latest/_models_intel_gaze_estimation_adas_0002_description_gaze_estimation_adas_0002.html)
 
 To build the project I used the **InferenceEngine API from Intel's OpenVino toolkit**.
 
 ## Demo
 
-To run the app a basic demo the demo.mp4 file can be used located `bin/demo.mp4` 
+To run the app a basic demo the demo.mp4 file (provided by **Udacity**) can be used, located `bin/demo.mp4` 
 
 Command to run inference on four models:   `python main.py`
 
 The default arguments: --modelF, --modelG, --modelH, --modelL, --input_type "video", --input_file "bin/demo.mp4", --mouse_speed, --mouse_precision, --device "CPU"
 
+Please find the **result samples** for several different head positions taken from demo.mp4: [pose_1]() [pose_2]() [pose_3]() [pose_4]() [pose_5]()
 
 ## Documentation
 
