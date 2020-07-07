@@ -28,7 +28,7 @@ Command to run inference on four models:   `python main.py`
 
 The default arguments: --modelF, --modelG, --modelH, --modelL, --input_type "video", --input_file "bin/demo.mp4", --mouse_speed, --mouse_precision, --device "CPU"
 
-Please find the **result samples** for several different head positions taken from demo.mp4: 
+Please find below the **result samples** for several different head positions taken from demo.mp4. These examples show how the application works, including tasks performed by subsequent models, until the mouse pointer position is found. 
 
    [pose_1](https://github.com/ireneuszcierpisz/computer-pointer-controller/blob/master/bin/output_image0.jpg) 
    
