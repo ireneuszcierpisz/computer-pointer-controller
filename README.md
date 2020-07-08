@@ -72,17 +72,38 @@ Please find below the **result samples** for several different head positions ta
                  --mouse_precision MOUSE_PRECISION
 
 
-## Benchmarks
-*TODO: Include the benchmark results of running your model on multiple hardwares and multiple model precisions. Your benchmarks can include: model loading time, input/output processing time, model inference time etc.*
-
 ## Results
-*TODO: Discuss the benchmark results and explain why you are getting the results you are getting. For instance, explain why there is difference in inference time for FP32, FP16 and INT8 models.*
 
-## Stand Out Suggestions
-*This is where you can provide information about the stand out suggestions that you have attempted.*
+I. Sample of models asynchronous inference performance on a **single image**:
 
-### Async Inference
-*If you have used Async Inference in your code, benchmark the results and explain its effects on power and performance of your project.*
+   _face-detection-adas-binary-0001 model precision: FP32-INT1_
+   
+            1.
+            The other three models precision: FP32 
+            Performance time: 0.065
+            2.
+            The other three models precision: FP16 
+            Performance time: 0.064
+            3.
+            The other three models precision: FP32-INT8 
+            Inference and process time: 0.063
+
+II. Sample of models asynchronous performance on a **video**:
+
+   Number of frames in the video: 595.0 ,  fps:30.02
+   
+   _face-detection-adas-binary-0001 model precision: **FP32-INT1**_
+   
+            1.
+            The other three models precision: FP32 
+            Performance time: 32.153
+            2.
+            The other three models precision: FP16 
+            Performance time: 33.528
+            3.
+            The other three models precision: FP32-INT8 
+            Performance time: 33.701
+
 
 ### Edge Cases
 
