@@ -20,6 +20,7 @@ class InputFeeder:
         if input_type == 'cam':
             self.input_file = 0
         self.cap = None
+        self.wideo_writer = None
         
     
     def load_data(self):
@@ -82,8 +83,10 @@ class InputFeeder:
         '''
         Closes the VideoCapture.
         '''
-        if not self.input_type=='image':
+        if self.input_type == 'video':
             self.video_writer.release()
+
+        if not self.input_type=='image':
             self.cap.release()
 
 
