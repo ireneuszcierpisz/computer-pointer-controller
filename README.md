@@ -1,5 +1,5 @@
 # Computer Pointer Controller
-#### This project has been completed as part of the INTEL® EDGE AI FOR IOT DEVELOPERS NANODEGREE by Udacity.
+#### The project has been completed as part of the INTEL® EDGE AI FOR IOT DEVELOPERS NANODEGREE by Udacity.
 
 This application is build to run multiple models in the **OpenVino toolkit** on the same machine to **control a computer pointer using eye gaze**.
 
