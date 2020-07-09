@@ -3,8 +3,6 @@
 
 This application is build to run multiple models in the **OpenVino toolkit** on the same machine to **control a computer pointer using eye gaze**.
 
-I made 
-
 
 ## Project Set Up and Installation
 
